@@ -1,7 +1,8 @@
 package org.unitins.br;
 
-public enum EstadoCelular {
+public enum Estado {
 
+    VAZIA(0, "Vazia"),
     ABANDONADA(1, "Abandonada"),
     BAIXAQUALIDADE(2, "Baixa Qualidade"),
     ALTAQUALIDADE(3, "Alta Qualidade");
@@ -9,7 +10,7 @@ public enum EstadoCelular {
     private final int ID;
     private final String NOME;
 
-    EstadoCelular(int id, String nome) {
+    Estado(int id, String nome) {
         this.ID = id;
         this.NOME = nome;
     }
@@ -22,8 +23,8 @@ public enum EstadoCelular {
         return NOME;
     }
 
-    public static EstadoCelular valueOf(int id) {
-        for (EstadoCelular e : values()) {
+    public static Estado valueOf(int id) {
+        for (Estado e : values()) {
             if (e.getID() == id) {
                 return e;
             }

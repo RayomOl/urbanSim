@@ -1,12 +1,12 @@
 package org.unitins.br;
 
-public class Celula {
+public class Construcao {
 
     private int posX;
     private int posY;
-    private EstadoCelular estado;
+    private Estado estado;
 
-    public Celula(int posX, int posY, EstadoCelular estado) {
+    public Construcao(int posX, int posY, Estado estado) {
         this.posX = posX;
         this.posY = posY;
         this.estado = estado;
@@ -28,11 +28,11 @@ public class Celula {
         this.posY = posY;
     }
 
-    public EstadoCelular getEstado() {
+    public Estado getEstado() {
         return estado;
     }
 
-    public void setEstado(EstadoCelular estado) {
+    public void setEstado(Estado estado) {
         this.estado = estado;
     }
 }
