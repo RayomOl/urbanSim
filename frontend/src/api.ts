@@ -1,6 +1,6 @@
 import type { EstadoSimulacao } from "./types";
 
-const BASE_URL = "http://localhost:8080/api/simulacao";
+const BASE_URL = "/api/simulacao";
 
 async function tratarResposta(resposta: Response): Promise<EstadoSimulacao> {
   if (!resposta.ok) {
